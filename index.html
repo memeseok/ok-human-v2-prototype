@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#171A1C" />
+    <meta name="color-scheme" content="light only" />
+    <meta name="robots" content="noindex" />
+    <title>OK HUMAN?</title>
+    <script type="module" crossorigin src="./assets/index-BfydXsP9.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BAf7BCDE.css">
+  </head>
+  <body>
+    <!-- 무대: 이 안의 모든 누르기는 한 곳에서 받는다. data-ui가 붙은 DOM 조작부만 예외 -->
+    <main id="stage">
+      <canvas id="gl"></canvas>
+
+      <div id="sub">
+        <p id="line"></p>
+        <div id="choices" data-ui></div>
+      </div>
+      <button id="skip" data-ui hidden>임시 분석표 보기</button>
+
+      <div id="lids"><i></i><i></i></div>
+      <section id="title">
+        <h1>OK HUMAN?</h1>
+        <p class="proto">프로토타입 · 접수부터 첫 작품까지</p>
+        <p>관람 기록은 이 기기 안에만 저장되고 2시간 뒤에 지워집니다. 전송하지 않습니다.</p>
+        <p>죽음과 신체 절차를 다루는 장면이 있습니다. <span class="help">자살예방 상담전화 109</span></p>
+        <p>관람은 언제든 화면을 닫아 그만둘 수 있습니다.</p>
+        <p id="hint">꾹 눌러 눈을 뜹니다</p>
+        <div id="resume" data-ui hidden>
+          <button id="resume-yes">이어 보기</button>
+          <button id="resume-no">처음부터</button>
+        </div>
+      </section>
+
+      <div id="white">
+        <div id="credits">
+          <h2>OK HUMAN?</h2>
+          <p>비공식 학생 작품이며 권리자와 무관합니다.</p>
+          <p>영감: 파산일기, 「현대인 = 조종당하는 인형 | OK Computer」</p>
+        </div>
+      </div>
+      <button id="tapon" data-ui hidden>눌러서 계속</button>
+    </main>
+
+    <!-- 분석표: 무대 밖이다. 길게 눌러 저장할 수 있어야 하므로 누르기 방지를 걸지 않는다 -->
+    <section id="report" hidden>
+      <img id="sheet" alt="환자 분석표" />
+      <p id="save-hint" hidden>이미지를 길게 눌러 저장하세요.</p>
+      <div class="row">
+        <button id="export">내보내기</button>
+        <button id="copy">문장 복사</button>
+      </div>
+      <p class="fine">전시 작품의 일부이며 의학적 진단이 아닙니다. 비공식 학생 작품이며 권리자와 무관합니다.</p>
+      <p class="fine">마음이 힘들 때: 자살예방 상담전화 109 (24시간)</p>
+      <button id="restart">처음부터</button>
+    </section>
+
+    <pre id="debug" hidden></pre>
+  </body>
+</html>
