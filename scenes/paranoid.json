@@ -1,0 +1,50 @@
+{
+ "plinthTop": [
+  0.0,
+  0.5,
+  0.0
+ ],
+ "bust": {
+  "center": [
+   1.0493,
+   1.39,
+   0.2738
+  ],
+  "size": [
+   0.4383,
+   0.6799,
+   0.4499
+  ]
+ },
+ "speaker": [
+  1.0498,
+  1.3913,
+  0.4851
+ ],
+ "beetle": {
+  "center": [
+   0.35,
+   0.0528,
+   1.55
+  ],
+  "size": [
+   0.2351,
+   0.1056,
+   0.28
+  ],
+  "scale": 0.31803
+ },
+ "tris": {
+  "plinth": 44,
+  "bust_stand": 44,
+  "bust_intact": 10000,
+  "bust_pieces": 13218,
+  "bust_piece_caps": 1639,
+  "beetle": 6000,
+  "bust_proxy": 12,
+  "beetle_proxy": 12,
+  "total": 29330
+ },
+ "pieceCount": 11,
+ "bytes": 1269128
+}

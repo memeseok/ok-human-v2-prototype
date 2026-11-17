@@ -1,0 +1,27 @@
+{
+ "opening": {
+  "min": [
+   -0.3275,
+   0.925
+  ],
+  "max": [
+   0.3275,
+   1.975
+  ],
+  "z": 0.0872
+ },
+ "curtainRemovedFromSource": true,
+ "tris": 19816,
+ "bytes": 930088,
+ "trisByNode": {
+  "window": 18998,
+  "stand": 36,
+  "curtain": 768,
+  "outside": 2,
+  "curtain_proxy": 12
+ },
+ "frameBackZ": -0.0872,
+ "curtainZ": 0.1172,
+ "outsideZ": -0.1372,
+ "curtainUV": "TEXCOORD_0 v = 1 at the top edge, u = 0 at -X"
+}

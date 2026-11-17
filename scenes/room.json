@@ -1,0 +1,21 @@
+{
+ "tableTop": {
+  "center": [
+   0.0046,
+   0.8968,
+   0.0279
+  ],
+  "size": [
+   2.2863,
+   0.6178
+  ]
+ },
+ "headEnd": "-X",
+ "bodyRemovedTris": 41181,
+ "tris": {
+  "table": 37307,
+  "lying": 5048,
+  "standing": 5048
+ },
+ "bytes": 2001180
+}

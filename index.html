@@ -7,8 +7,8 @@
     <meta name="color-scheme" content="light only" />
     <meta name="robots" content="noindex" />
     <title>OK HUMAN?</title>
-    <script type="module" crossorigin src="./assets/index-BfydXsP9.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BAf7BCDE.css">
+    <script type="module" crossorigin src="./assets/index-B--z0mXS.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-4XhuI_t9.css">
   </head>
   <body>
     <!-- 무대: 이 안의 모든 누르기는 한 곳에서 받는다. data-ui가 붙은 DOM 조작부만 예외 -->
@@ -19,12 +19,13 @@
         <p id="line"></p>
         <div id="choices" data-ui></div>
       </div>
-      <button id="skip" data-ui hidden>임시 분석표 보기</button>
+      <!-- 가름끈: 도록을 받은 뒤에 보인다(F-73) -->
+      <button id="ribbon" data-ui hidden aria-label="도록 펼치기"></button>
 
       <div id="lids"><i></i><i></i></div>
       <section id="title">
         <h1>OK HUMAN?</h1>
-        <p class="proto">프로토타입 · 접수부터 첫 작품까지</p>
+        <p class="proto">프로토타입</p>
         <p>관람 기록은 이 기기 안에만 저장되고 2시간 뒤에 지워집니다. 전송하지 않습니다.</p>
         <p>죽음과 신체 절차를 다루는 장면이 있습니다. <span class="help">자살예방 상담전화 109</span></p>
         <p>관람은 언제든 화면을 닫아 그만둘 수 있습니다.</p>
@@ -42,6 +43,16 @@
           <p>영감: 파산일기, 「현대인 = 조종당하는 인형 | OK Computer」</p>
         </div>
       </div>
+      <!-- 도록: 캔버스 위의 깨끗한 DOM. 디더와 필터가 닿지 않는다(F-75) -->
+      <section id="catalogue" data-ui hidden aria-label="도록">
+        <div id="pages"></div>
+        <nav>
+          <button id="cat-prev">이전</button>
+          <span><b id="page-now">1</b> / <span id="page-total"></span></span>
+          <button id="cat-next">다음</button>
+        </nav>
+        <button id="cat-close">덮기</button>
+      </section>
       <button id="tapon" data-ui hidden>눌러서 계속</button>
     </main>
 
@@ -55,6 +66,16 @@
       </div>
       <p class="fine">전시 작품의 일부이며 의학적 진단이 아닙니다. 비공식 학생 작품이며 권리자와 무관합니다.</p>
       <p class="fine">마음이 힘들 때: 자살예방 상담전화 109 (24시간)</p>
+      <h2>원곡 듣기</h2>
+      <ul id="links">
+        <li><a href="https://www.youtube.com/watch?v=jNY_wLukVW0" target="_blank" rel="noopener noreferrer">Airbag</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Lt8AfIeJOxw" target="_blank" rel="noopener noreferrer">Paranoid Android</a></li>
+        <li><a href="https://www.youtube.com/watch?v=duBCwvC1kP4" target="_blank" rel="noopener noreferrer">Let Down</a></li>
+        <li><a href="https://www.youtube.com/watch?v=eHK67LiMI8k" target="_blank" rel="noopener noreferrer">My Iron Lung</a></li>
+        <li><a href="https://www.youtube.com/watch?v=O4SzvsMFaek" target="_blank" rel="noopener noreferrer">Fitter Happier</a></li>
+        <li><a href="https://www.youtube.com/watch?v=FapBH3j6WoA" target="_blank" rel="noopener noreferrer">Exit Music (For a Film)</a></li>
+      </ul>
+      <p class="fine">Radiohead, 《OK Computer》(1997), 《The Bends》(1995). 영감: 파산일기, 「현대인 = 조종당하는 인형 | OK Computer」</p>
       <button id="restart">처음부터</button>
     </section>
 
